@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item android:drawable="@drawable/cloud035" android:duration="40" />
+    <item android:drawable="@drawable/cloud036" android:duration="40" />
+    <item android:drawable="@drawable/cloud037" android:duration="40" />
+    <item android:drawable="@drawable/cloud038" android:duration="40" />
+    <item android:drawable="@drawable/cloud039" android:duration="40" />
+    <item android:drawable="@drawable/cloud040" android:duration="40" />
+    <item android:drawable="@drawable/cloud041" android:duration="40" />
+    <item android:drawable="@drawable/cloud042" android:duration="40" />
+    <item android:drawable="@drawable/cloud043" android:duration="40" />
+    <item android:drawable="@drawable/cloud044" android:duration="40" />
+    <item android:drawable="@drawable/cloud045" android:duration="40" />
+    <item android:drawable="@drawable/cloud046" android:duration="40" />
+    <item android:drawable="@drawable/cloud047" android:duration="40" />
+    <item android:drawable="@drawable/cloud048" android:duration="40" />
+    <item android:drawable="@drawable/cloud049" android:duration="40" />
+    <item android:drawable="@drawable/cloud050" android:duration="40" />
+    <item android:drawable="@drawable/cloud051" android:duration="40" />
+    <item android:drawable="@drawable/cloud052" android:duration="40" />
+    <item android:drawable="@drawable/cloud053" android:duration="40" />
+    <item android:drawable="@drawable/cloud054" android:duration="40" />
+    <item android:drawable="@drawable/cloud055" android:duration="40" />
+    <item android:drawable="@drawable/cloud056" android:duration="40" />
+    <item android:drawable="@drawable/cloud057" android:duration="40" />
+    <item android:drawable="@drawable/cloud058" android:duration="40" />
+    <item android:drawable="@drawable/cloud059" android:duration="40" />
+    <item android:drawable="@drawable/cloud060" android:duration="40" />
+    <item android:drawable="@drawable/cloud061" android:duration="40" />
+    <item android:drawable="@drawable/cloud062" android:duration="40" />
+    <item android:drawable="@drawable/cloud063" android:duration="40" />
+    <item android:drawable="@drawable/cloud064" android:duration="40" />
+    <item android:drawable="@drawable/cloud065" android:duration="40" />
+    <item android:drawable="@drawable/cloud066" android:duration="40" />
+    <item android:drawable="@drawable/cloud067" android:duration="40" />
+    <item android:drawable="@drawable/cloud068" android:duration="40" />
+    <item android:drawable="@drawable/cloud069" android:duration="40" />
+    <item android:drawable="@drawable/cloud070" android:duration="40" />
+    <item android:drawable="@drawable/cloud071" android:duration="40" />
+    <item android:drawable="@drawable/cloud072" android:duration="40" />
+    <item android:drawable="@drawable/cloud073" android:duration="40" />
+    <item android:drawable="@drawable/cloud074" android:duration="40" />
+    <item android:drawable="@drawable/cloud075" android:duration="40" />
+    <item android:drawable="@drawable/cloud076" android:duration="40" />
+    <item android:drawable="@drawable/cloud077" android:duration="40" />
+    <item android:drawable="@drawable/cloud078" android:duration="40" />
+    <item android:drawable="@drawable/cloud079" android:duration="40" />
+    <item android:drawable="@drawable/cloud080" android:duration="40" />
+    <item android:drawable="@drawable/cloud081" android:duration="40" />
+    <item android:drawable="@drawable/cloud082" android:duration="40" />
+    <item android:drawable="@drawable/cloud083" android:duration="40" />
+    <item android:drawable="@drawable/cloud084" android:duration="40" />
+    <item android:drawable="@drawable/cloud085" android:duration="40" />
+    <item android:drawable="@drawable/cloud086" android:duration="40" />
+    <item android:drawable="@drawable/cloud087" android:duration="40" />
+    <item android:drawable="@drawable/cloud088" android:duration="40" />
+    <item android:drawable="@drawable/cloud089" android:duration="40" />
+    <item android:drawable="@drawable/cloud090" android:duration="40" />
+    <item android:drawable="@drawable/cloud091" android:duration="40" />
+    <item android:drawable="@drawable/cloud092" android:duration="40" />
+    <item android:drawable="@drawable/cloud093" android:duration="40" />
+    <item android:drawable="@drawable/cloud094" android:duration="40" />
+    <item android:drawable="@drawable/cloud095" android:duration="40" />
+    <item android:drawable="@drawable/cloud096" android:duration="40" />
+    <item android:drawable="@drawable/cloud097" android:duration="40" />
+    <item android:drawable="@drawable/cloud098" android:duration="40" />
+    <item android:drawable="@drawable/cloud099" android:duration="40" />
+    <item android:drawable="@drawable/cloud100" android:duration="40" />
+    <item android:drawable="@drawable/cloud101" android:duration="40" />
+    <item android:drawable="@drawable/cloud102" android:duration="40" />
+    <item android:drawable="@drawable/cloud103" android:duration="40" />
+    <item android:drawable="@drawable/cloud104" android:duration="40" />
+    <item android:drawable="@drawable/cloud105" android:duration="40" />
+    <item android:drawable="@drawable/cloud106" android:duration="40" />
+    <item android:drawable="@drawable/cloud107" android:duration="40" />
+    <item android:drawable="@drawable/cloud108" android:duration="40" />
+    <item android:drawable="@drawable/cloud109" android:duration="40" />
+    <item android:drawable="@drawable/cloud110" android:duration="40" />
+
+
+</animation-list>

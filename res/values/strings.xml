@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Grocery Time</string>
+    <string name="add">Add</string>
+    <string name="delete">Delete</string>
+    <string name="update">Update</string>
+    <string name="go">Go to Grocery List</string>
+    <string name="change">Change City</string>
+    <string name="changen">Change Name</string>
+    <string name="item">Add an Item</string>
+    <string name="tryagain">Data cant be found. Try another city</string>
+
+
+
+    <string type="edit" name="glid"/>
+    <string type="edit" name="glitem"/>
+    <string type="edit" name="glquantity"/>
+    <string type="edit" name="glcursor"/>
+
+</resources>

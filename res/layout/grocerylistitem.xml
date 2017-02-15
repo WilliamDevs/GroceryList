@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="beforeDescendants"
+        android:layout_gravity="bottom"
+        android:weightSum="5">
+        <TextView
+            android:id="@+id/gID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/gItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:textColor="#fff"
+            android:hint="@string/item" />
+        <TextView
+            android:id="@+id/gQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:hint="#"/>
+        <Button
+            android:id="@+id/updateGrocery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/update"/>
+        <Button
+            android:id="@+id/deleteGrocery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/delete"/>
+    </LinearLayout>
+
+</LinearLayout>
