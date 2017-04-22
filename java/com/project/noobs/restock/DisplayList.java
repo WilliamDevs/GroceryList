@@ -43,27 +43,19 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class DisplayList extends AppCompatActivity implements View.OnClickListener {
-    RecyclerView recyclerView;
-    RecyclerView.Adapter adapter;
-    RecyclerView.LayoutManager layoutManager;
-    ArrayList<Contact> arrayList;
-    SimpleCursorAdapter simpleCursorAdapter,simpleCursorAdapter2;
-    EditText item,quantity,gItem,gQuantity;
+    SimpleCursorAdapter simpleCursorAdapter2;
+    EditText item,quantity;
     Button add,delete;
-    TextView array0;
     ListView list;
     int status,tool;
     String newitem,newquantity,name;
     DBHandler db;
-    String itemname,quantityname;
     Toolbar myToolbar;
     String url ="http://192.168.1.153/Savage/Material/addItem.php";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_list);
-       // array0 = (TextView)findViewById(R.id.array0);
-       // recyclerView = (RecyclerView) findViewById(R.id.recyclerview);
         SharedPreferences sharedPreferences = getSharedPreferences("Color", Context.MODE_PRIVATE);
         status = sharedPreferences.getInt("status", status);
         tool = sharedPreferences.getInt("tool", tool);
@@ -82,10 +74,6 @@ public class DisplayList extends AppCompatActivity implements View.OnClickListen
         item = (EditText)findViewById(R.id.item);
         quantity = (EditText)findViewById(R.id.quantity);
         quantity.setText("0");
-
-
-
-
         add = (Button)findViewById(R.id.newGrocery);
         delete = (Button)findViewById(R.id.deleteGrocery);
         list = (ListView)findViewById(R.id.list);
@@ -95,15 +83,6 @@ public class DisplayList extends AppCompatActivity implements View.OnClickListen
         db = new DBHandler(this);
         displayGroceryList();
         showDialog();
-
-
-
-        //layoutManager = new LinearLayoutManager(this);
-        //recyclerView.setLayoutManager(layoutManager);
-       // recyclerView.setHasFixedSize(true);
-       // BackgroundTask backgroundTask = new BackgroundTask(this);
-       // arrayList = backgroundTask.getList();
-       // getLoader();
 
         item.addTextChangedListener(new TextWatcher() {
             @Override
@@ -149,8 +128,6 @@ public class DisplayList extends AppCompatActivity implements View.OnClickListen
             public void afterTextChanged(Editable s) {
                 newitem = item.getText().toString();
                 newquantity = quantity.getText().toString();
-              //  int itemquantity = Integer.parseInt(newquantity);
-
                 boolean checkitem = checkitem(newitem);
                 boolean checkquantity = checkquantity(newquantity);
                 Log.d("LauncherTag","item = " + checkitem + " " + "quantity = " + checkquantity);
@@ -168,61 +145,7 @@ public class DisplayList extends AppCompatActivity implements View.OnClickListen
         });
 
     }
-    private void updateCount(final int counti) {
-        runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-            }
-        });
-    }
-/*    public void getLoader(){
-        final android.os.Handler handler = new android.os.Handler();
-        count = 0;
-        handler.post( new Runnable() {
-            @Override
-            public void run() {
 
-                if (count < 20) {
-                    updateCount(count++);
-                    handler.postDelayed(this, 100);
-                    if (count == 4) {
-                        supercount++;
-                        Log.d("LauncherTag", "GMaps = this counter is working" + count + supercount);
-                        if(supercount==7){
-                            count=17;
-                        }
-                    }
-                    if (count == 7) {
-
-                        Log.d("LauncherTag", "GMaps = this counter is still working" + count  );
-                        if(arrayList.size()==0){
-                            count = 0;
-                        }else {
-                            count = 16;
-                        }
-
-
-                    }
-                    if (count == 17) {
-                        Log.d("LauncherTag", " Is GMaps  still working ?" + count);
-
-                        adapter = new RecyclerAdapter(arrayList,DisplayList.this);
-                        adapter.notifyDataSetChanged();
-                        recyclerView.setAdapter(adapter);
-
-                        if(arrayList.size()==0){
-                            array0.animate().alpha(1);
-                            Log.d("LauncherTag", " No Content Yet :(");
-                        }
-
-                    }
-                    Log.d("LauncherTag", " counter is " + count  +" " +arrayList.size());
-                }
-            }
-        });
-    }
-
-*/
     @Override
     public void onClick(View v) {
         switch(v.getId()){
@@ -231,10 +154,7 @@ public class DisplayList extends AppCompatActivity implements View.OnClickListen
                 displayGroceryList();
                 Toast.makeText(this,"Grocery added",Toast.LENGTH_SHORT).show();
                 new sendItem().execute();
-
-
                 break;
-
         }
     }
     public boolean checkitem(String item){
@@ -364,8 +284,6 @@ public class DisplayList extends AppCompatActivity implements View.OnClickListen
                     params.put("name",name);
                     params.put("item",item.getText().toString());
                     params.put("quantity",quantity.getText().toString());
-
-
                     return params;
 
                 }

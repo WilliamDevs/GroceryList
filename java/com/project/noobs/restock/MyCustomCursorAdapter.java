@@ -25,15 +25,11 @@ import com.project.noobs.restock.data.DBHandler;
  * Created by Noobs on 11/2/2016.
  */
 public class MyCustomCursorAdapter extends SimpleCursorAdapter implements View.OnClickListener {
-     String updateitem,updatequantity;
-
      TextView tv,item,quantity;
      Button delete,update;
      DBHandler db;
      DisplayList dl = new DisplayList();
      LinearLayout ln;
-    SimpleCursorAdapter simpleCursorAdapter2;
-
 
     public MyCustomCursorAdapter(Context context, int layout, Cursor c, String[] from, int[] to, int flags) {
         super(context, layout, c, from, to, flags);
@@ -88,8 +84,6 @@ public class MyCustomCursorAdapter extends SimpleCursorAdapter implements View.O
                 int getid = Integer.parseInt(v.getTag().toString());
                 db.deleteGrocery(getid);
                 view.animate().alpha(0).translationY(100);
-
-
              }
         });
         Log.d("LauncherTag","Info " + " " + cursor.getPosition() + " " + listid+ " "+ listitem + " "+ listquantity);
@@ -108,7 +102,6 @@ public class MyCustomCursorAdapter extends SimpleCursorAdapter implements View.O
 
         @Override
         protected void onPostExecute(Void aVoid) {
-
             super.onPostExecute(aVoid);
         }
     }
@@ -206,8 +199,6 @@ public class MyCustomCursorAdapter extends SimpleCursorAdapter implements View.O
                 return true;
             }
         };
-
-        // 1dp/ms
         a.setDuration((int) (initialHeight / v.getContext().getResources().getDisplayMetrics().density));
         v.startAnimation(a);
     }

@@ -283,7 +283,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             changeBackground(One,Two,Three,Four);
 
         }
-       // changeBackground(R.color.colorPrimaryDark,R.color.sunSecondary,R.color.colorPrimary,R.color.sunPrimary);
     }
 
     @Override
