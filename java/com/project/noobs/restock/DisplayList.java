@@ -51,7 +51,7 @@ public class DisplayList extends AppCompatActivity implements View.OnClickListen
     String newitem,newquantity,name;
     DBHandler db;
     Toolbar myToolbar;
-    String url ="http://192.168.1.153/Savage/Material/addItem.php";
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
